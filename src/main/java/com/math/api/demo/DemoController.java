@@ -41,4 +41,10 @@ public class DemoController {
         return Math.pow(base, exponent);
     }
 
+    // 💰 Interest Calculator
+    @GetMapping("/interest")
+    public double calculateInterest(@RequestParam double principal, @RequestParam double rate, @RequestParam double time) {
+        return (principal * rate * time) / 100;
+    }
+
 }
