@@ -56,18 +56,6 @@ public class DemoControllerTest {
         assertEquals(8.0, result);
     }
 
-    // 🔽 Square Root Test
-    @Test
-    void testSqrt() {
-        String result = mathController.sqrt(16);
-        assertEquals("4.0", result);
-    }
-
-    // ❌ Negative Square Root Test
-    @Test
-    void testNegativeSqrt() {
-        String result = mathController.sqrt(-9);
-        assertEquals("Error: Cannot calculate square root of negative number.", result);
-    }
+    
 
 }

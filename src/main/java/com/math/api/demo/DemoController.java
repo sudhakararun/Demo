@@ -41,13 +41,4 @@ public class DemoController {
         return Math.pow(base, exponent);
     }
 
-    // 🔽 Square Root
-    @GetMapping("/sqrt")
-    public String sqrt(@RequestParam double value) {
-        if (value < 0) {
-            return "Error: Cannot calculate square root of negative number.";
-        }
-        return String.valueOf(Math.sqrt(value));
-    }
-
 }
