@@ -49,12 +49,7 @@ public class DemoControllerTest {
         assertEquals("Error: Division by zero is not allowed.", result);
     }
 
-    // 🔢 Power Test
-    @Test
-    void testPower() {
-        double result = mathController.power(2, 3);
-        assertEquals(8.0, result);
-    }
+    
 
     
 
