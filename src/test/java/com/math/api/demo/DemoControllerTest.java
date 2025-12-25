@@ -56,6 +56,18 @@ public class DemoControllerTest {
         assertEquals(8.0, result);
     }
 
-    
+    // 💰 Interest Calculator Test
+    @Test
+    void testCalculateInterest() {
+        double result = mathController.calculateInterest(1000, 5, 2);
+        assertEquals(100.0, result);
+    }
+
+    // 💰 Interest Calculator Test - Zero Interest
+    @Test
+    void testCalculateInterestZeroRate() {
+        double result = mathController.calculateInterest(1000, 0, 2);
+        assertEquals(0.0, result);
+    }
 
 }
