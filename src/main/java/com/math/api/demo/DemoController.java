@@ -35,10 +35,4 @@ public class DemoController {
         return String.valueOf(a / b);
     }
 
-    // 🔢 Power
-    @GetMapping("/power")
-    public double power(@RequestParam double base, @RequestParam double exponent) {
-        return Math.pow(base, exponent);
-    }
-
 }
